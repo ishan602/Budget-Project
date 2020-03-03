@@ -1,0 +1,76 @@
+.top {
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  padding: 10px;
+  background-color: #f8f8ff;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.top .budget {
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+  padding: 10px 10px 30px 10px;
+  width: fit-content;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.top .budget .budget__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+.top .budget .budget__value {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 4px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.top .budget .budget__income,
+.top .budget .budget__expense {
+  margin-top: 20px;
+  padding: 5px;
+  font-weight: 600;
+  display: flex;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.top .budget .budget__income.danger,
+.top .budget .budget__expense.danger {
+  background-color: #ff4444;
+}
+.top .budget .budget__income.blue,
+.top .budget .budget__expense.blue {
+  background-color: #003366;
+}
+.top .budget .budget__income .budget__income-text,
+.top .budget .budget__income .budget__expense-text,
+.top .budget .budget__expense .budget__income-text,
+.top .budget .budget__expense .budget__expense-text {
+  flex-basis: 40%;
+}
+.top .budget .budget__income .right,
+.top .budget .budget__expense .right {
+  justify-content: flex-end;
+  flex-basis: 60%;
+  display: flex;
+}
+.top .budget .budget__income .right .budget__income--percentage,
+.top .budget .budget__income .right .budget__expense--percentage,
+.top .budget .budget__expense .right .budget__income--percentage,
+.top .budget .budget__expense .right .budget__expense--percentage {
+  margin-left: 5px;
+  padding: 0px 3px 0px 3px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.44);
+}
+
+/*# sourceMappingURL=top.css.map */
