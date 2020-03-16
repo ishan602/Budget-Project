@@ -15,7 +15,7 @@ function Form() {
           placeholder='Add description'
         />
         <input type='number' className='add__value' placeholder='Value' />
-        <button className='add__btn'>
+        <button type='button' className='add__btn' id='add__btn'>
           <i className='ion-ios-checkmark-outline'></i>
         </button>
       </div>

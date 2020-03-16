@@ -58,7 +58,9 @@
         justify-content: flex-end;
         flex-basis: 60%;
         display: flex;
-        .budget__income--percentage,
+        .budget__income--value {
+          margin-right: 20px;
+        }
         .budget__expense--percentage {
           margin-left: 5px;
           padding: 0px 3px 0px 3px;

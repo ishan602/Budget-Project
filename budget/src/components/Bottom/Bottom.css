@@ -1,3 +1,144 @@
-
+.bottom {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.bottom .income,
+.bottom .expenses {
+  width: 400px;
+  height: auto;
+  -webkit-box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+}
+.bottom .income .income__heading,
+.bottom .income .expenses__heading,
+.bottom .expenses .income__heading,
+.bottom .expenses .expenses__heading {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 25px;
+  border-radius: 3px;
+  display: block;
+  padding: 10px 0px 10px 7px;
+}
+.bottom .income .income__heading.red,
+.bottom .income .expenses__heading.red,
+.bottom .expenses .income__heading.red,
+.bottom .expenses .expenses__heading.red {
+  color: #ffffff;
+  background-color: #ff4444;
+}
+.bottom .income .income__heading.blue,
+.bottom .income .expenses__heading.blue,
+.bottom .expenses .income__heading.blue,
+.bottom .expenses .expenses__heading.blue {
+  color: #ffffff;
+  background-color: #003366;
+}
+.bottom .income .income__list .item,
+.bottom .income .expenses__list .item,
+.bottom .expenses .income__list .item,
+.bottom .expenses .expenses__list .item {
+  padding: 10px;
+  display: flex;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.bottom .income .income__list .item.border,
+.bottom .income .expenses__list .item.border,
+.bottom .expenses .income__list .item.border,
+.bottom .expenses .expenses__list .item.border {
+  border-radius: 0px;
+}
+.bottom .income .income__list .item.border:nth-child(even),
+.bottom .income .expenses__list .item.border:nth-child(even),
+.bottom .expenses .income__list .item.border:nth-child(even),
+.bottom .expenses .expenses__list .item.border:nth-child(even) {
+  background-color: rgba(211, 211, 211, 0.3);
+}
+.bottom .income .income__list .item .item__description,
+.bottom .income .expenses__list .item .item__description,
+.bottom .expenses .income__list .item .item__description,
+.bottom .expenses .expenses__list .item .item__description {
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 100%;
+}
+.bottom .income .income__list .item .right,
+.bottom .income .expenses__list .item .right,
+.bottom .expenses .income__list .item .right,
+.bottom .expenses .expenses__list .item .right {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottom .income .income__list .item .right .item__value.red,
+.bottom .income .expenses__list .item .right .item__value.red,
+.bottom .expenses .income__list .item .right .item__value.red,
+.bottom .expenses .expenses__list .item .right .item__value.red {
+  color: #ff4444;
+}
+.bottom .income .income__list .item .right .item__value.blue,
+.bottom .income .expenses__list .item .right .item__value.blue,
+.bottom .expenses .income__list .item .right .item__value.blue,
+.bottom .expenses .expenses__list .item .right .item__value.blue {
+  color: #003366;
+}
+.bottom .income .income__list .item .right .item__percentage,
+.bottom .income .expenses__list .item .right .item__percentage,
+.bottom .expenses .income__list .item .right .item__percentage,
+.bottom .expenses .expenses__list .item .right .item__percentage {
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 1px 4px 1px 4px;
+  background-color: #ff4444;
+  opacity: 0.8;
+  margin-left: 8px;
+  margin-right: 4px;
+  border-radius: 3px;
+}
+.bottom .income .income__list .item .right .item__delete--btn,
+.bottom .income .expenses__list .item .right .item__delete--btn,
+.bottom .expenses .income__list .item .right .item__delete--btn,
+.bottom .expenses .expenses__list .item .right .item__delete--btn {
+  display: none;
+  font-size: 17px;
+  padding: 4px;
+  background-color: transparent;
+  margin-left: 4px;
+  margin-right: 4px;
+  border: none;
+  color: #ff4444;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.bottom .income .income__list .item .right .item__delete--btn i,
+.bottom .income .expenses__list .item .right .item__delete--btn i,
+.bottom .expenses .income__list .item .right .item__delete--btn i,
+.bottom .expenses .expenses__list .item .right .item__delete--btn i {
+  font-size: 22px;
+  font-weight: 600;
+}
+.bottom .income .income__list .item .right .item__delete--btn:hover,
+.bottom .income .expenses__list .item .right .item__delete--btn:hover,
+.bottom .expenses .income__list .item .right .item__delete--btn:hover,
+.bottom .expenses .expenses__list .item .right .item__delete--btn:hover {
+  opacity: 1;
+  color: #ff4444;
+}
+.bottom .income .income__list .item:hover .item__delete--btn,
+.bottom .income .expenses__list .item:hover .item__delete--btn,
+.bottom .expenses .income__list .item:hover .item__delete--btn,
+.bottom .expenses .expenses__list .item:hover .item__delete--btn {
+  display: block;
+}
 
 /*# sourceMappingURL=Bottom.css.map */

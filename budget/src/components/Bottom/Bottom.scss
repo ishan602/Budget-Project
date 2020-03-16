@@ -1,0 +1,114 @@
+.bottom {
+  // border: 1px solid red;
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+  .income,
+  .expenses {
+    // border: 1px solid black;
+    width: 400px;
+    height: auto;
+    -webkit-box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+    box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.44);
+    .income__heading,
+    .expenses__heading {
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 25px;
+      // border: 1px solid red;
+      border-radius: 3px;
+      display: block;
+      // width: 100%;
+      padding: 10px 0px 10px 7px;
+      &.red {
+        // color: #ff4444;
+        color: #ffffff;
+        background-color: #ff4444;
+      }
+      &.blue {
+        // color: #003366;
+        color: #ffffff;
+        background-color: #003366;
+      }
+    }
+    .income__list,
+    .expenses__list {
+      // border: 1px solid blue;
+      .item {
+        padding: 10px;
+        display: flex;
+        line-height: 40px;
+        font-size: 18px;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        &.border {
+          border-radius: 0px;
+        }
+        &.border:nth-child(even) {
+          background-color: rgba(211, 211, 211, 0.3);
+        }
+        .item__description {
+          text-decoration: none;
+          text-transform: capitalize;
+          width: 100%;
+        }
+        .right {
+          display: flex;
+          width: 70%;
+          justify-content: flex-end;
+          align-items: center;
+          .item__value {
+            &.red {
+              color: #ff4444;
+            }
+            &.blue {
+              color: #003366;
+            }
+          }
+          .item__percentage {
+            letter-spacing: 1px;
+            font-size: 14px;
+            padding: 1px 4px 1px 4px;
+
+            background-color: #ff4444;
+            opacity: 0.8;
+
+            margin-left: 8px;
+            margin-right: 4px;
+            border-radius: 3px;
+          }
+          .item__delete--btn {
+            display: none;
+            font-size: 17px;
+            padding: 4px;
+            background-color: transparent;
+            margin-left: 4px;
+            margin-right: 4px;
+            border: none;
+            color: #ff4444;
+            opacity: 0.7;
+            cursor: pointer;
+            i {
+              font-size: 22px;
+              font-weight: 600;
+            }
+            &:hover {
+              opacity: 1;
+              color: #ff4444;
+            }
+          }
+        }
+        &:hover {
+          .item__delete--btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

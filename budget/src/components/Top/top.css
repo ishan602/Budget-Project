@@ -63,9 +63,11 @@
   flex-basis: 60%;
   display: flex;
 }
-.top .budget .budget__income .right .budget__income--percentage,
+.top .budget .budget__income .right .budget__income--value,
+.top .budget .budget__expense .right .budget__income--value {
+  margin-right: 20px;
+}
 .top .budget .budget__income .right .budget__expense--percentage,
-.top .budget .budget__expense .right .budget__income--percentage,
 .top .budget .budget__expense .right .budget__expense--percentage {
   margin-left: 5px;
   padding: 0px 3px 0px 3px;
