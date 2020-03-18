@@ -1,13 +1,11 @@
 import React from "react";
 import "./top.css";
 function Top() {
-  var currentMonth = "February";
   return (
     <div className='top'>
       <div className='budget'>
         <div className='budget__title'>
-          Available Budget in{" "}
-          <span className='budget__title--month'>{currentMonth}</span> Month.
+          Available Budget in <span className='budget__title--month'></span>
         </div>
         <div className='budget__value'>
           {/* <span className='budget__value--plus'>+&nbsp;</span> */}
